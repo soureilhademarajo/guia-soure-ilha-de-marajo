@@ -1,1 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>Guia Soure — Aplicativo</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0fdf4;
+    }
+
+    .categoria {
+      transition: transform 0.2s;
+    }
+
+    .categoria:active {
+      transform: scale(0.96);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- CABEÇALHO -->
+  <header class="bg-green-800 text-white text-center p-6">
+
+    <div class="text-5xl">🏝️</div>
+
+    <h1 class="text-3xl font-bold mt-2">
+      Guia Soure
+    </h1>
+
+    <p class="text-green-200">
+      Ilha de Marajó — Pará
+    </p>
+
+  </header>
+
+
+  <main class="max-w-lg mx-auto p-4">
+
+
+    <!-- PESQUISA -->
+    <section class="mt-2">
+
+      <input
+        type="search"
+        placeholder="🔎 O que você procura?"
+        class="w-full bg-white border rounded-full px-5 py-4 shadow-sm outline-none focus:ring-2 focus:ring-green-600"
+      >
+
+    </section>
+
+
+    <!-- BEM-VINDO -->
+    <section class="bg-white rounded-2xl shadow p-5 mt-5">
+
+      <h2 class="text-xl font-bold text-green-800">
+        Bem-vindo ao Guia Soure! 💚
+      </h2>
+
+      <p class="text-gray-600 mt-2">
+        Encontre informações sobre turismo, cultura,
+        gastronomia, eventos, comércio e muito mais.
+      </p>
+
+    </section>
+
+
+    <!-- CATEGORIAS -->
+    <section class="grid grid-cols-2 gap-4 mt-5">
+
+
+      <button class="categoria bg-white rounded-2xl shadow p-5">
+        <div class="text-4xl">🏖️</div>
+        <div class="font-bold text-green-800 mt-2">
+          Lugares
+        </div>
+      </button>
+
+
+      <button class="categoria bg-white rounded-2xl shadow p-5">
+        <div class="text-4xl">🍽️</div>
+        <div class="font-bold text-green-800 mt-2">
+          Gastronomia
+        </div>
+      </button>
+
+
+      <button class="categoria bg-white rounded-2xl shadow p-5">
+        <div class="text-4xl">🏨</div>
+        <div class="font-bold text-green-800 mt-2">
+          Hospedagem
+        </div>
+      </button>
+
+
+      <button class="categoria bg-white rounded-2xl shadow p-5">
+        <div class="text-4xl">🛍️</div>
+        <div class="font-bold text-green-800 mt-2">
+          Comércio
+        </div>
+      </button>
+
+
+      <button class="categoria bg-white rounded-2xl shadow p-5">
+        <div class="text-4xl">📅</div>
+        <div class="font-bold text-green-800 mt-2">
+          Eventos
+        </div>
+      </button>
+
+
+      <button class="categoria bg-white rounded-2xl shadow p-5">
+        <div class="text-4xl">📰</div>
+        <div class="font-bold text-green-800 mt-2">
+          Notícias
+        </div>
+      </button>
+
+
+      <button class="categoria bg-white rounded-2xl shadow p-5">
+        <div class="text-4xl">🎭</div>
+        <div class="font-bold text-green-800 mt-2">
+          Cultura
+        </div>
+      </button>
+
+
+      <button class="categoria bg-white rounded-2xl shadow p-5">
+        <div class="text-4xl">📖</div>
+        <div class="font-bold text-green-800 mt-2">
+          História
+        </div>
+      </button>
+
+    </section>
+
+
+    <!-- PLAYER -->
+    <section class="bg-green-900 text-white rounded-2xl shadow p-5 mt-6">
+
+      <div class="text-center">
+
+        <div class="text-4xl">
+          🎵
+        </div>
+
+        <h2 class="text-xl font-bold mt-2">
+          Rádio Guia Soure
+        </h2>
+
+        <p class="text-green-200 text-sm">
+          Música online
+        </p>
+
+      </div>
+
+      <audio
+        controls
+        class="w-full mt-4"
+      >
+        <source src="" type="audio/mpeg">
+        Seu navegador não suporta áudio.
+      </audio>
+
+      <p class="text-center text-xs text-green-300 mt-2">
+        Transmissão online autorizada
+      </p>
+
+    </section>
+
+
+    <!-- PUBLICIDADE -->
+    <section class="mt-6">
+
+      <div class="bg-white border rounded-xl p-4 text-center">
+
+        <p class="text-xs text-gray-400">
+          PUBLICIDADE
+        </p>
+
+        <p class="text-gray-500 text-sm mt-2">
+          Espaço reservado para anúncios
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- FACEBOOK -->
+    <section class="bg-blue-50 rounded-2xl shadow p-5 mt-6 text-center">
+
+      <div class="text-4xl">
+        📘
+      </div>
+
+      <h2 class="text-xl font-bold text-blue-800 mt-2">
+        Soure Ilha de Marajó
+      </h2>
+
+      <p class="text-blue-700 text-sm mt-2">
+        Acompanhe notícias, fotos e novidades.
+      </p>
+
+      <a
+        href="https://facebook.com/soureilhademarajo"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-block bg-blue-600 text-white px-5 py-3 rounded-full font-bold mt-4"
+      >
+        Acessar Facebook
+      </a>
+
+    </section>
+
+
+    <!-- SOBRE -->
+    <section class="bg-green-50 rounded-2xl p-5 mt-6">
+
+      <h2 class="text-xl font-bold text-green-800">
+        💚 Sobre o projeto
+      </h2>
+
+      <p class="text-gray-700 text-sm mt-2">
+        O Guia Soure foi criado para reunir informações
+        sobre Soure e a Ilha de Marajó em um só lugar.
+      </p>
+
+    </section>
+
+
+  </main>
+
+
+  <!-- RODAPÉ -->
+  <footer class="bg-green-900 text-white text-center p-5 mt-8">
+
+    <p class="font-bold">
+      🏝️ Guia Soure
+    </p>
+
+    <p class="text-green-200 text-sm mt-1">
+      Ilha de Marajó — Pará
+    </p>
+
+  </footer>
+
+</body>
+</html>

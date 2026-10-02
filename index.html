@@ -243,7 +243,23 @@ const supabase = window.supabase.createClient(
 );
 </script>
   </main>
+<script>
+async function carregarLugares() {
+  const { data, error } = await supabase
+    .from("lugares")
+    .select("*")
+    .eq("ativo", true);
 
+  if (error) {
+    console.error("Erro ao carregar lugares:", error);
+    return;
+  }
+
+  console.log("Lugares carregados:", data);
+}
+
+carregarLugares();
+</script>
 
   <!-- RODAPÉ -->
   <footer class="bg-green-900 text-white text-center p-6 mt-10">
